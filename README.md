@@ -17,7 +17,7 @@ dependencies with [Composer](https://getcomposer.org/). It is based on the [orig
 1. Checkout this project repo and confirm the path is in Docker's file sharing config - https://docs.docker.com/docker-for-mac/#file-sharing
 
     ```bash
-    git clone https://github.com/amazeeio/drupal-example-simple.git drupal9-lagoon && cd $_
+    git clone https://github.com/seanhamlin/ciandt-drupal.git && cd $_
     ```
 
 2. Make sure you don't have anything running on port 80 on the host machine (like a web server) then run `pygmy up`
@@ -29,7 +29,7 @@ dependencies with [Composer](https://getcomposer.org/). It is based on the [orig
     docker-compose exec cli composer install
     ```
 
-4. Visit the new site @ `http://drupal-example-simple.docker.amazee.io`
+4. Visit the new site @ `http://ciandt-drupal.docker.amazee.io`
 
 * If any steps fail, you're safe to rerun from any point.
 Starting again from the beginning will just reconfirm the changes.
@@ -79,7 +79,7 @@ When installing the given `composer.json` some tasks are taken care of:
 
 ## Updating Drupal Core
 
-Follow the steps below to update your core files. Scaffolding is managed by Drupal core. See the `assets/` directory for more information. 
+Follow the steps below to update your core files. Scaffolding is managed by Drupal core. See the `assets/` directory for more information.
 
 1. Run `composer update drupal/core-recommended drupal/core-dev-pinned --with-dependencies`
 
